@@ -34,14 +34,14 @@ e.g. If you're testing a Web-application and want to test equivalents for the "<
 enter that as input and select either "best-fit mapping", which is linked to a charset encoding,
 or "normalization" equivalents.  For this character, the following are best-fits:
 
-U+003B in the APL-ISO-IR-68 encoding
-U+0014 in the CP424 encoding
-etc...
+- U+003B in the APL-ISO-IR-68 encoding
+- U+0014 in the CP424 encoding
+- etc...
 
 Also, the following are normalization decomposition mappings:
 
-U+FE64 SMALL LESS-THAN SIGN
-U+FF1C FULLWIDTH LESS-THAN SIGN
+- U+FE64 SMALL LESS-THAN SIGN
+- U+FF1C FULLWIDTH LESS-THAN SIGN
 
 /UniHax
 -------
@@ -72,4 +72,10 @@ public byte[] GetCharacterBytesMalformed(string encoding, string character)
 ```
 
 This project also contains the data files, pre-created in the __/data__ folder, and a __Mapping.cs__ Mapping 
-class which can lookup mapping equivalents.
+class which can lookup mapping equivalents for the following:
+
+- ASCII equivalent best-fit mappings across legacy character encodings
+- ASCII equivalent mappings for Unicode normalization types.  For example, Web browsers commonly use 
+  a form of normalization for keeping URL content and host names compatible.
+
+For more on Unicode Normalization see TR15:  http://www.unicode.org/reports/tr15/
