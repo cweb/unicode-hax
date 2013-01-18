@@ -39,6 +39,7 @@ U+0014 in the CP424 encoding
 etc...
 
 Also, the following are normalization decomposition mappings:
+
 U+FE64 SMALL LESS-THAN SIGN
 U+FF1C FULLWIDTH LESS-THAN SIGN
 
