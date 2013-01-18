@@ -44,7 +44,7 @@ U+FF1C FULLWIDTH LESS-THAN SIGN
 
 /UniHax
 -------
-This library contains static Unicode characters in **Fuzzer.cs** such as the following snippet:
+This library contains a small set of __problematic Unicode characters__ in **Fuzzer.cs** such as the following:
 
 ```csharp
         /// <summary>
