@@ -9,6 +9,9 @@ For example, the __best-fit__ and __normalization__ mappings can be useful for t
 cross-site scripting (XSS) or SQL injection (SQLi) vulnerabilities, by providing you with alternative
 characters which map back, or transform, to the intended ASCII encoded input - such as "<", "'", etc.
 
+Additionally, many __problem characters__ have been pre-defined as a reduced set, reducing the number of iterations
+a fuzzer might need to perform.
+
 Major features: 
 - best fit mappings 
 - Unicode normalization mappings 
@@ -41,8 +44,20 @@ U+FF1C FULLWIDTH LESS-THAN SIGN
 
 /UniHax
 -------
-This library contains static Unicode characters in **Fuzzer.cs**, as well as the following method to return 
-those characters as a byte array in any encoding.  
+This library contains static Unicode characters in **Fuzzer.cs** such as the following snippet:
+
+```csharp
+        /// <summary>
+        /// An unassigned code point U+0FED
+        /// </summary>
+        public static readonly string uUnassigned = "\u0FED";
+        /// <summary>
+        ///  An illegal low half-surrogate U+DEAD
+        /// </summary>
+        public static readonly string uDEAD = "\uDEAD";
+```
+
+Also the following method to return those characters as a byte array in any encoding.  
 
 ```csharp
 public byte[] GetCharacterBytes(string encoding, string character)
