@@ -9,7 +9,7 @@ For example, the __best-fit__ and __normalization__ mappings can be useful for t
 cross-site scripting (XSS) or SQL injection (SQLi) vulnerabilities, by providing you with alternative
 characters which map back, or transform, to the intended ASCII encoded input - such as "<", "'", etc.
 
-Additionally, many __problem characters__ have been pre-defined as a reduced set, reducing the number of iterations
+Additionally, many __problem characters__ have been pre-defined as a small set, reducing the number of iterations
 a fuzzer might need to perform.
 
 Major features: 
