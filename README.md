@@ -1,11 +1,18 @@
 unicode-hax
 ===========
 
-A library to assist in testing and hacking Unicode enabled applications. 
+A library to assist in security-testing Unicode enabled applications. The original intent of putting this together 
+was to provide input to a software fuzzer and to have access to historically problematic Unicode characters and 
+sequences which might negatively affect protocols and Web applications.  
+
+For example, the __best-fit__ and __normalization__ mappings can be useful for testing Web applications for 
+cross-site scripting (XSS) or SQL injection (SQLi) vulnerabilities, by providing you with alternative
+characters which map back, or transform, to the intended ASCII encoded input - such as "<", "'", etc.
 
 Major features: 
 - best fit mappings 
 - Unicode normalization mappings 
+- hard-coded Unicode characters useful in fuzzing
 
 For fuzzing applications it includes: 
 - ill-formed byte sequences 
