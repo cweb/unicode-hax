@@ -2,8 +2,12 @@ unicode-hax
 ===========
 
 A library to assist in security-testing Unicode enabled applications. The original intent of putting this together 
-was to provide input to a software fuzzer and to have access to historically problematic Unicode characters and 
-sequences which might negatively affect protocols and Web applications.  
+was threefold:
+
+1. To provide a reduced set of useful Unicode input to a software fuzzer
+2. To document historically problematic Unicode characters sequences which 
+might negatively affect protocols and Web applications.  
+3. To lookup mappings for ASCII equivalent characters
 
 For example, the __best-fit__ and __normalization__ mappings can be useful for testing Web applications for 
 cross-site scripting (XSS) or SQL injection (SQLi) vulnerabilities, by providing you with alternative
