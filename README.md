@@ -83,3 +83,10 @@ class which can lookup mapping equivalents for the following:
   a form of normalization for keeping URL content and host names compatible.
 
 For more on Unicode Normalization see TR15:  http://www.unicode.org/reports/tr15/
+
+License
+-------
+Unicode-Hax by <a href="http://www.lookout.net/">Chris Weber</a> is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License </a>. 
+Based on a work at https://github.com/cweb/unicode-hax.
