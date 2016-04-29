@@ -65,7 +65,7 @@ namespace UniHax
         public static readonly string uWordJoiner = "\u2060";
         /// <summary>
         /// A reserved code point U+FEFE
-        /// UTF-8 percent encoding is %ef%bb%bf
+        /// UTF-8 percent encoding is %ef%bb%be
         /// </summary>
         public static readonly string uReservedCodePoint = "\uFEFE";
         /// <summary>
