@@ -95,12 +95,12 @@ namespace UniHax
         public static readonly string uPrivate = "\uF8FF";
         /// <summary>
         /// U+FF0F FULLWIDTH SOLIDUS should normalize to / in a hostname
-        /// UTF-8 percent encoding is %F0%9D%9F%96
+        /// UTF-8 percent encoding is %EF%BC%8F
         /// </summary>
         public static readonly string uFullwidthSolidus = "\uFF0F";
         /// <summary>
         /// Code point with a numerical mapping and value U+1D7D6 MATHEMATICAL BOLD DIGIT EIGHT
-        /// UTF-8 percent encoding is 
+        /// UTF-8 percent encoding is %F0%9D%9F%96
         /// </summary>
         public static readonly string uBoldEight = char.ConvertFromUtf32(0x1D7D6);
         /// <summary>
